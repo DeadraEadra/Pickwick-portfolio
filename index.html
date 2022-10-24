@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="icon" type="image/png" href="img/pickwick-logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <!-- <div class="navbar"> -->
+            <!-- BURGER MENU-->
+            <section class="p-menu1" class="nav-element">
+                <nav id="navbar" class="navigation">
+                    <input id="toggle1" type="checkbox" />
+                    <label class="hamburger1" for="toggle1">
+                        <div class="top"></div>
+                        <div class="meat"></div>
+                        <div class="bottom"></div>
+                    </label>
+
+                    <nav class="menu1">
+                        <a class="link1" href="construction.html">Tea</a>
+                        <a class="link1" href="recipe.html">Recipes</a>
+                        <a class="link1" href="sustainability.html">Sustainability</a>
+                        <a class="link1" href="construction.html">Newsletter</a>
+                    </nav>
+                </nav>
+            </section>
+            <!-- BURGER MENU-->
+            <div class="nav-left">
+                <a class="nav-item" href="construction.html">Assortment</a>
+                <a class="nav-item" href="recipe.html">Recipes</a>
+                <a class="nav-item" href="sustainability.html">Sustainability</a>
+            </div>
+            <a class="nav-element" href="index.html"><img id="logo" src="img/pickwick-logo.png" alt="Pickwick's logo"></a>
+
+
+            <div class="nav-right" class="nav-element">
+                <a class="nav-item" href="construction.html">About us</a>
+                <a class="nav-item" href="construction.html">Contact us</a>
+            </div>
+
+            <!-- </div> -->
+        </nav>
+    </header>
+    <section>
+        <div class="news-container">
+            <div id="button-container">
+                <div id="slogan-button-container">
+                    <h1 class="heading">Brand new tea</h1>
+                    <h1 class="heading">—</h1>
+                    <h1 class="heading">Brand new packaging</h1>
+                </div>
+                <button id="button1" type="button"><a id="check-it" href="product.html">Check it out!</a></button>
+            </div>
+            <img id="special-image" src="img/special.png" alt="New product banner">
+        </div>
+    </section>
+    <section id="tea-container">
+
+        <div id="teas-section">
+            <div id="heading">
+                <h1 class="heading">Choose your cup of tea</h1>
+            </div>
+            <div id="grid">
+                <ul>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/green.png" alt="Green tea"></a>
+                        <a class="grid-text" href="#">
+                            <h2>Green tea</h2>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/black.png" alt="Black tea"></a>
+                        <a class="grid-text" href="construction.html">
+                            <h2>Black tea</h2>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/white.png" alt="White tea"></a>
+                        <a class="grid-text" href="construction.html">
+                            <h2>White tea</h2>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/fruit.png" alt="Fruit tea"></a>
+                        <a class="grid-text" href="construction.html">
+                            <h2>Fruit tea</h2>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/spices.png" alt="Spice tea"></a>
+                        <a class="grid-text" href="construction.html">
+                            <h2>Spice tea</h2>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="construction.html"><img class="grid-photo" src="img/herbal.png" alt="Herbal tea"></a>
+                        <a class="grid-text" href="construction.html">
+                            <h2>Herbal blends</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section id="recipes-banner-section">
+        <!-- <div id="recipes-banner-section"> -->
+        <a id="recipes-banner" href="recipe.html"><img id="banner-photo" src="img/main-recipes.jpg"
+                alt="Click here to check out the recipes"></a>
+        <!-- </div> -->
+    </section>
+    <section>
+        <div id="sustainability-section-container">
+            <div id="sustainability-title">
+                <h1 class="title">We are all about sustainability</h1>
+            </div>
+            <div id="sustainability-items">
+                <a href="sustainability.html">
+                    <h3 class="learn-more">Learn more</h3>
+                </a>
+                <img id="plant-icon" src="img/plant-icon.svg" alt="Plant icon">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div id="footer-top">
+            <div class="footer-item" id="contact">
+                <a href="construction.html">
+                    <h4 class="footer-text">Contact us</h4>
+                </a>
+                <a href="construction.html">
+                    <h4 class="footer-text">All products</h4>
+                </a>
+            </div>
+            <div class="footer-item" id="newsletter-container">
+                <h4 class="footer-heading">Sign up for our newsletter</h4>
+                <!--Newsletter sign up - partially copied from Mobile-First Lemorse project-->
+                <form>
+                    <div class="form-group">
+                        <label class="label" for="username">Username</label>
+                        <input class="input" type="text" name="username" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="password">Password</label>
+                        <input class="input" type="password" name="password" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <button id="register-button" type="submit">Register</button>
+                    </div>
+                </form>
+                <!--Newsletter sign up-->
+            </div>
+            <div class="footer-item" id="social-media-container">
+                <div id="newsletter-heading">
+                    <h4 class="footer-heading">Find us on social media</h4>
+
+                </div>
+                <div id="icons-container">
+                    <a class="icon" href="https://www.instagram.com/deadra_eadra/"><i class="fab fa-instagram-square"></i></a>
+                    <a class="icon" href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter-square"></i></a>
+                    <a class="icon" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer-bottom">
+            <h4 id="copyright-text">© Pickwick 2021 All rights reserved</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

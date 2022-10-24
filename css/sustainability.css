@@ -1,0 +1,685 @@
+html, body {
+    background-color:#FAFBF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 62.5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+
+body {
+    width: 100%;
+    height: min-content;
+    align-items: center;
+}
+
+/*HEADER*/
+.header-container {
+    width: 90%;
+    height: 35vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-image: url("../img/sustainability.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: fixed;
+    padding: 0px 20px 10px 20px;
+    top:0;
+    background-color: rgba(74 ,74 ,74, 0.5);
+    z-index: 200;
+}
+
+
+/*BURGER MENU*/
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .p-menu1{
+     height: 86%;
+     overflow: visible;
+    z-index: 1000;
+  }
+ 
+  /* Hamburger */
+  .hamburger1 {
+    height: 15px;
+    /*margin: 10px;*/
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+  }
+  
+  .hamburger1 div {
+    background-color: #FAFBF5;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  /*.hamburger1 div:hover {
+      background-color: #5d950f;
+  }*/
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+    background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -2px;
+    background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+            background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 260px;
+  }
+  
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: rgb(240, 245, 217,0.95);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: (3, 0.3fr);
+    grid-row-gap: 0px;
+    padding: 0px;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+    z-index: 120;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 400 20px 'Oswald', sans-serif;
+    color: #4A4A4A;
+  }
+  
+  .link1:hover {
+    background-color: rgb(61, 61, 61, 0.2);
+    color: #4A4A4A;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+/*BURGER MENU*/
+
+#logo {
+    width: 60px;
+}
+
+.nav-left {
+    display: none;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav-item {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #FAFBF5;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*HEADER*/
+
+/*TEXT*/
+.heading {
+    font-family: 'Bodoni Moda', serif;
+    color: #4A4A4A;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+}
+.subheading {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.description {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 1rem;
+    text-align: justify;
+}
+.subheading-small {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/*TEXT*/
+#two-containers {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#all-about  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0px 40px;
+}
+
+.text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 30px 0px;
+    background-color: #F0F5D9;
+    padding: 30px;
+}
+.icons-small {
+    width: 100px;
+}
+.arrow {
+    width: 1px;
+}
+.icon-text-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*cultivation  section*/
+#cultivation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 30px 0px;
+    gap: 30px;
+}
+#fair-cultivation {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+#sub-cultivation {
+    font-size: 1.6rem;
+}
+#origin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.description-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+/*cultivation  section*/
+/*packaging  section*/
+#packaging  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 40px 0px;
+    gap: 30px;
+}
+.icon-text-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#recyclable-packaging {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+#sub-cultivation {
+    font-size: 1.6rem;
+}
+.description-text-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#description-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#cardboard-image {
+    width: 280px;
+}
+
+img {
+    width: 100px;
+}
+
+/*packaging  section*/
+
+/*FOOTER*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    position: sticky;
+}
+#footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D5D5D5;
+    background-color: #D5D5D5;
+    gap: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.footer-item {
+    width: 100%;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.footer-text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 3px;
+}
+.footer-text:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.label {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+}
+.input {
+    width: 150px;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    background-color: #FAFBF5;
+}
+#register-button {
+    background-color: #F0F5D9;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 1rem;
+    margin-top: 7px;
+    transition: 0.2s;
+}
+#register-button:hover {
+    background-color: #5d950f;
+    color: #FAFBF5;
+    transition: 0.2s;
+}
+#social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon {
+    color: #4A4A4A;
+    height: 10px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#footer-bottom {
+    padding: 5px;
+    background-color: #C1C1C1;
+    text-align: center;
+}
+#copyright-text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+}
+/*FOOTER*/
+
+
+
+/* For desktop*/
+@media only screen and (min-width: 800px) {
+
+    .nav-left {
+        display:inline;
+    }
+
+    .p-menu1 {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        position: fixed;
+        padding: 0px 200px 10px 200px;
+        top:0;
+        background-color: rgba(74 ,74 ,74, 0.5);
+    }
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nav-right {
+        gap: 20px;
+    }
+
+    #logo {
+        width: 5.5rem;
+    }
+    
+    .nav-item {
+        font-size: 1.4rem;
+    }
+
+/*FOOTER*/
+#footer-top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D5D5D5;
+    background-color: #D5D5D5;
+    gap: 30px;
+    padding: 40px 50px;
+}
+.footer-text {
+    font-size: 1.3rem;
+    margin: 5px;
+}
+#newsletter-container {
+    gap: 30px;
+}
+form {
+    gap: 10px;
+}
+.form-group {
+    gap: 15px;
+}
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.input {
+    width: 200px;
+    height: 30px;
+}
+#register-button {
+    padding: 7px 30px;
+    font-size: 1.2rem;
+}
+#social-media-container {
+    gap: 20px;
+}
+.icon {
+    color: #4A4A4A;
+    height: 10px;
+    transition: 0.2s;
+} /*why doesn't the size work???????????*/
+
+.icon:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#footer-bottom {
+    padding: 10px;
+}
+#copyright-text {
+    font-size: 1rem;
+}
+.footer-heading {
+    font-size: 1.3rem;
+}
+/*FOOTER*/
+
+/*TEXT*/
+.heading {
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+}
+.subheading {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.description {
+    font-size: 1rem;
+    text-align: justify;
+}
+.subheading-small {
+    font-size: 1.2rem;
+}
+/*TEXT*/
+
+/*OTHER*/
+#two-containers {
+    flex-direction: row;
+    width: 80%;
+    gap: 100px;
+    margin: 30px 0px 40px;
+}
+
+#all-about  {
+    margin: 30px 0px 40px;
+    width: 50%;
+}
+
+.text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 30px 0px;
+    background-color: #F0F5D9;
+    padding: 30px;
+    width: 50%;
+}
+.icons-small {
+    width: 100px;
+}
+.arrow {
+    width: 1px;
+}
+.icon-text-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*cultivation  section*/
+#cultivation {
+    width: 70%;
+    margin: 30px 0px;
+    gap: 50px;
+}
+iframe {
+    width: 760px;
+    height: 215px;
+}
+#fair-cultivation {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+#sub-cultivation {
+    font-size: 1.6rem;
+}
+#origin {
+    gap: 30px;
+}
+.description-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+/*cultivation  section*/
+/*packaging  section*/
+#packaging  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 40px 0px;
+    gap: 30px;
+}
+.icon-text-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#recyclable-packaging {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+#sub-cultivation {
+    font-size: 1.6rem;
+}
+.description-text-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#description-text {
+    flex-direction: row;
+    gap: 30px;
+}
+#paragraph1 {
+    width: 40%;
+}
+iframe {
+    width: 60%;
+    height: 200px;
+}
+.description-text-2 {
+    flex-direction: row;
+    gap: 30px;
+}
+#paragraph2 {
+    width: 35%;
+}
+#cardboard-image {
+    width: auto;
+    height: 200px;
+}
+/*packaging  section*/
+/*OTHER*/
+}

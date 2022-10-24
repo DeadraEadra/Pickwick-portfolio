@@ -1,0 +1,637 @@
+html, body {
+    background-color:#FAFBF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 62.5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+
+body {
+    width: 100%;
+    height: min-content;
+    align-items: center;
+}
+
+/*HEADER*/
+.header-container {
+    width: 90%;
+    height: 35vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-image: url("../img/main-backgr.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: fixed;
+    padding: 0px 20px 10px 20px;
+    top:0;
+    background-color: rgba(74 ,74 ,74, 0.5);
+    z-index: 200;
+}
+
+
+/*BURGER MENU*/
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .p-menu1{
+     height: 86%;
+     overflow: visible;
+    z-index: 1000;
+  }
+ 
+  /* Hamburger */
+  .hamburger1 {
+    height: 15px;
+    /*margin: 10px;*/
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+  }
+  
+  .hamburger1 div {
+    background-color: #FAFBF5;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  /*.hamburger1 div:hover {
+      background-color: #5d950f;
+  }*/
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+    background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -2px;
+    background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+            background-color: #4A4A4A;
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 260px;
+  }
+  
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: rgb(240, 245, 217,0.95);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: (3, 0.3fr);
+    grid-row-gap: 0px;
+    padding: 0px;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
+    z-index: 120;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 400 20px 'Oswald', sans-serif;
+    color: #4A4A4A;
+  }
+  
+  .link1:hover {
+    background-color: rgb(61, 61, 61, 0.2);
+    color: #4A4A4A;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+/*BURGER MENU*/
+
+#logo {
+    width: 60px;
+}
+
+.nav-left {
+    display: none;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav-item {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #FAFBF5;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*HEADER*/
+
+
+/*NEW TEA*/
+.news-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 30px;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+#button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#slogan-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-family: 'Bodoni Moda', serif;
+    color: #4A4A4A;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+}
+
+
+#button1 {
+    padding: 10px;
+    background-color: #FAFBF5;
+    border: 1px solid #D5D5D5;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+#button1:hover {
+   background-color: #F0F5D9;
+    transition: 0.3s;    
+}
+#check-it {
+    color: #4A4A4A;
+}
+#special-image {
+    width: 60%;
+    position: relative;
+    right: 40px;
+}
+/*NEW TEA*/
+
+/*TEAS*/
+#teas-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F5D9;
+    padding: 30px 20px 40px 20px;
+}
+#grid > ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.7s ease;
+}
+.grid-item:hover {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    transform: scale(1.1);
+  }
+
+.grid-photo {
+    width: 9rem;
+    height: auto;
+}
+.grid-text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+/*TEAS*/
+
+/*RECIPES*/
+#recipes-banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 20px;
+    width: 100%;
+}
+
+#recipes-banner {
+    background: #4A4A4A;
+}
+#banner-photo {
+    width: 20rem;
+    transition: linear .5s;
+}
+#banner-photo:hover {
+    transform: scale(1.1);
+}
+/*RECIPES*/
+
+/*SUSTAINABILITY*/
+#sustainability-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#sustainability-title {
+    font-family: 'Bodoni Moda', serif;
+    color: #4A4A4A;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+}
+#sustainability-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.learn-more {
+    transform: rotate(-90deg);
+    font-family: 'Didact Gothic', sans-serif;
+    color: #5d950f;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.learn-more:hover {
+    color: #4A4A4A;
+    transition: 0.2s;
+}
+#plant-icon {
+    width: 40%;
+}
+/*SUSTAINABILITY*/
+a {
+    text-decoration: none;
+}
+
+/*FOOTER*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    position: sticky;
+}
+#footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D5D5D5;
+    background-color: #D5D5D5;
+    gap: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.footer-item {
+    width: 100%;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.footer-text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 3px;
+}
+.footer-text:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.label {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+}
+.input {
+    width: 150px;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    background-color: #FAFBF5;
+}
+#register-button {
+    background-color: #F0F5D9;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 1rem;
+    margin-top: 7px;
+    transition: 0.2s;
+}
+#register-button:hover {
+    background-color: #5d950f;
+    color: #FAFBF5;
+    transition: 0.2s;
+}
+#social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon {
+    color: #4A4A4A;
+    height: 100px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#footer-bottom {
+    padding: 5px;
+    background-color: #C1C1C1;
+    text-align: center;
+}
+#copyright-text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+}
+/*FOOTER*/
+
+
+
+/* For desktop*/
+@media only screen and (min-width: 800px) {
+
+    .nav-left {
+        display:inline;
+    }
+
+    .p-menu1 {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        position: fixed;
+        padding: 0px 200px 10px 200px;
+        top:0;
+        background-color: rgba(74 ,74 ,74, 0.5);
+    }
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nav-right {
+        gap: 20px;
+    }
+
+    #logo {
+        width: 5.5rem;
+    }
+    
+    .nav-item {
+        font-size: 1.4rem;
+    }
+
+    /*NEW TEA*/
+.news-container {
+    margin: 0px 20vw 0px 15vw;
+    padding: 30px;
+}
+
+.heading {
+    font-size: 1.8rem;
+}
+
+#special-image {
+    width: 30rem;
+    position: relative;
+    right: 20px;
+}
+/*NEW TEA*/
+
+/*TEAS*/
+#tea-container {
+    width: 70%;
+}
+#teas-section {
+    padding: 30px 20px 40px 20px;
+    width: 100%;
+}
+#grid > ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.grid-photo {
+    width: 10rem;
+    height: auto;
+}
+/*TEAS*/
+
+/*RECIPES*/
+#banner-photo {
+    width: 30rem;
+}
+#recipes-banner {
+   margin: 20px 0px 60px 0px;
+}
+/*RECIPES*/
+
+/*SUSTAINABILITY*/
+#sustainability-section-container {
+    gap: 60px;
+}
+#sustainability-title {
+    font-size: 2rem;
+}
+#sustainability-items {
+    gap: 60px;
+    margin-bottom: 60px;
+}
+.learn-more {
+    font-size: 2rem;
+}
+#plant-icon {
+    width: 45%;
+}
+/*SUSTAINABILITY*/
+
+/*FOOTER*/
+#footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D5D5D5;
+    background-color: #D5D5D5;
+    gap: 30px;
+    padding: 40px 50px;
+}
+.footer-text {
+    font-size: 1.3rem;
+    margin: 5px;
+}
+#newsletter-container {
+    gap: 30px;
+}
+form {
+    gap: 10px;
+}
+.form-group {
+    gap: 15px;
+}
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.input {
+    width: 200px;
+    height: 30px;
+}
+#register-button {
+    padding: 7px 30px;
+    font-size: 1.2rem;
+}
+#social-media-container {
+    gap: 20px;
+}
+.icon {
+    color: #4A4A4A;
+    height: 20vw;
+    transition: 0.2s;
+} /*why doesn't the size work???????????*/
+
+.icon:hover {
+    color: #5d950f;
+    transition: 0.2s;
+}
+#footer-bottom {
+    padding: 10px;
+}
+#copyright-text {
+    font-size: 1rem;
+}
+.footer-heading {
+    font-size: 1.3rem;
+}
+/*FOOTER*/
+}

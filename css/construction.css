@@ -1,0 +1,28 @@
+/*TEXT*/
+.subheading {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 3vw;
+}
+.subheading-small {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 2vw;
+}
+/*TEXT*/
+body {
+    background-color:#FAFBF5;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+img {
+    width: 25%;
+    margin-top: 50px;
+}

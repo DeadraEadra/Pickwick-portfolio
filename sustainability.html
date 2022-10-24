@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+    <link rel="icon" type="image/png" href="img/pickwick-logo.png">
+    <link rel="stylesheet" href="css/sustainability.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <!-- <div class="navbar"> -->
+            <!-- BURGER MENU-->
+            <section class="p-menu1" class="nav-element">
+                <nav id="navbar" class="navigation">
+                    <input id="toggle1" type="checkbox" />
+                    <label class="hamburger1" for="toggle1">
+                        <div class="top"></div>
+                        <div class="meat"></div>
+                        <div class="bottom"></div>
+                    </label>
+
+                    <nav class="menu1">
+                        <a class="link1" href="construction.html">Tea</a>
+                        <a class="link1" href="recipe.html">Recipes</a>
+                        <a class="link1" href="sustainability.html">Sustainability</a>
+                        <a class="link1" href="construction.html">Newsletter</a>
+                    </nav>
+                </nav>
+            </section>
+            <!-- BURGER MENU-->
+            <div class="nav-left">
+                <a class="nav-item" href="construction.html">Assortment</a>
+                <a class="nav-item" href="recipe.html">Recipes</a>
+                <a class="nav-item" href="sustainability.html">Sustainability</a>
+            </div>
+            <a class="nav-element" href="index.html"><img id="logo" src="img/pickwick-logo.png" alt="Pickwick's logo"></a>
+
+
+            <div class="nav-right" class="nav-element">
+                <a class="nav-item" href="construction.html">About us</a>
+                <a class="nav-item" href="construction.html">Contact us</a>
+            </div>
+
+            <!-- </div> -->
+        </nav>
+    </header>
+    <div id="two-containers">
+        <section id="all-about">
+            <h2 class="subheading">We are all about sustainability!</h2>
+            <div class="text-left">
+                <h2 class="subheading-small" id="which-means">Which means, that...</h2>
+                <p class="description">We care about both the product and the people who stand behind it. Pickwick tea
+                    is
+                    collected in ecologically-grown plantations and contains best-quality natural ingredients only. We
+                    always make sure our employees work in ethical conditions, and, as we all know, a happy employee
+                    means a
+                    job done well.</p>
+            </div>
+        </section>
+        <section id="icons">
+            <div class="icon-text-small">
+                <img class="icons-small" src="img/sunset-icon.png" alt="Icon with plnttion field">
+                <h2 class="subheading">Fair cultivation</h2>
+                <a class="icon" class="arrow" href="#cultivation"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="icon-text-small">
+                <img class="icons-small" src="img/plant-icon.svg" alt="Plant icon">
+                <h2 class="subheading">Recyclable packaging</h2>
+                <a class="icon" class="arrow" href="#packaging"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+    </div>
+    <section id="cultivation">
+        <div class="icon-text-big">
+            <img id="fair" src="img/sunset-icon.png" alt="sunset field icon">
+            <h2 class="subheading" id="fair-cultivation">Fair cultivation</h2>
+        </div>
+        <div id="origin">
+            <h2 class="subheading" id="sub-cultivation">Where does Pickwick come from?</h2>
+            <div class="description-text">
+                <p class="description" id="paragraph1">Fair cultivation is our top priority, That is why Pickwick obtains its tea leaves
+                    from Rainforest Alliance certified tea plantations. This way we know for sure that our tea is made
+                    sustainably and the farmer is supported. This yeas the Pickwick Herbal varieties are RA certified
+                    and our goal will be achieved in 2022; the entire Pickwick tea range is RA certified!</p>
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/9iyb80dqvYo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="packaging">
+        <div class="icon-text-big">
+            <img src="img/plant-icon.svg" alt="plant icon">
+            <h2 class="subheading" id="recyclable-packaging">Recyclable packaging</h2>
+        </div>
+        <h2 class="subheading" id="sub-packaging">We're switching to plastic-free!</h2>
+        <div class="description-text-2">
+            <img id="cardboard-image" src="img/recycle.jpg" alt="recyclable cardboard box">
+            <p class="description" id="paragraph2">Sustainability is becoming a huge part of our mission, which is why we designed new
+                packaging for our products. The pouches are fully-recyclable, and their production takes less energy
+                than usual plastic packaging. Our goal is to eliminate all the plastic used to ship our products and
+                switch to its alternatives till the year of 2022.</p>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div id="footer-top">
+            <div class="footer-item" id="contact">
+                <a href="construction.html">
+                    <h4 class="footer-text">Contact us</h4>
+                </a>
+                <a href="construction.html">
+                    <h4 class="footer-text">All products</h4>
+                </a>
+            </div>
+            <div class="footer-item" id="newsletter-container">
+                <h4 class="footer-heading">Sign up for our newsletter</h4>
+                <!--Newsletter sign up - partially copied from Mobile-First Lemorse project-->
+                <form>
+                    <div class="form-group">
+                        <label class="label" for="username">Username</label>
+                        <input class="input" type="text" name="username" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="password">Password</label>
+                        <input class="input" type="password" name="password" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <button id="register-button" type="submit">Register</button>
+                    </div>
+                </form>
+                <!--Newsletter sign up-->
+            </div>
+            <div class="footer-item" id="social-media-container">
+                <div id="newsletter-heading">
+                    <h4 class="footer-heading">Find us on social media</h4>
+
+                </div>
+                <div id="icons-container">
+                    <a class="icon" href="https://www.instagram.com/deadra_eadra/"><i class="fab fa-instagram-square"></i></a>
+                    <a class="icon" href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter-square"></i></a>
+                    <a class="icon" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer-bottom">
+            <h4 id="copyright-text">© Pickwick 2021 All rights reserved</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

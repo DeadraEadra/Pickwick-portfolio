@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="icon" type="image/png" href="img/pickwick-logo.png">
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <!-- <div class="navbar"> -->
+            <!-- BURGER MENU-->
+            <section class="p-menu1" class="nav-element">
+                <nav id="navbar" class="navigation">
+                    <input id="toggle1" type="checkbox" />
+                    <label class="hamburger1" for="toggle1">
+                        <div class="top"></div>
+                        <div class="meat"></div>
+                        <div class="bottom"></div>
+                    </label>
+
+                    <nav class="menu1">
+                        <a class="link1" href="construction.html">Tea</a>
+                        <a class="link1" href="recipe.html">Recipes</a>
+                        <a class="link1" href="sustainability.html">Sustainability</a>
+                        <a class="link1" href="construction.html">Newsletter</a>
+                    </nav>
+                </nav>
+            </section>
+            <!-- BURGER MENU-->
+            <div class="nav-left">
+                <a class="nav-item" href="construction.html">Assortment</a>
+                <a class="nav-item" href="recipe.html">Recipes</a>
+                <a class="nav-item" href="sustainability.html">Sustainability</a>
+            </div>
+            <a class="nav-element" href="index.html"><img id="logo" src="img/pickwick-logo.png" alt="Pickwick's logo"></a>
+
+
+            <div class="nav-right" class="nav-element">
+                <a class="nav-item" href="construction.html">About us</a>
+                <a class="nav-item" href="construction.html">Contact us</a>
+            </div>
+
+            <!-- </div> -->
+        </nav>
+    </header>
+    <section class="recipe-sections" id="recipe-text-container">
+        <div id="ingredients">
+            <h2 class="subheading">Ingredients</h2>
+            <ul>
+                <li class="description">1 tsp honey</li>
+                <li class="description">3 lemon slices</li>
+                <li class="description">4 mint leaves</li>
+            </ul>
+        </div>
+        <div id="method">
+            <h2 class="subheading">Method</h2>
+            <ol>
+                <li class="description">Boil 200ml of water in a kettle</li>
+                <li class="description">Let the water cool for a second or two when it's boiled. This will reduce a chance of any hard water deposits from tea kettle ending up in your mug or burning yourself with steam.</li>
+                <li class="description">Put 1-2 teaspoons of tea into your cup</li>
+                <li class="description">Pour hot water into the cup</li>
+                <li class="description">Wait 5 minutes</li>
+                <li class="description">In the meantime prepare the honey and mint and cut the lemon in slices</li>
+                <li class="description">Add all of the ingredients to the cup</li>
+                <li class="description">Enjoy while warm!</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="recipe-sections" id="other">
+        <h1 id="other-heading" class="heading">Check out other recipes</h1>
+        <div id="photos-container">
+            <a href="construction.html"><img id="img1" class="other-img" src="img/ginger.jpg" alt="Fruit tea blend"></a>
+            <a href="construction.html"><img id="img2" class="other-img" src="img/eucaliptus.jpg" alt="Healing blend"></a>
+            <a href="construction.html"><img id="img3" class="other-img" src="img/floral.jpg" alt="Energizing blend"></a>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-container">
+        <div id="footer-top">
+            <div class="footer-item" id="contact">
+                <a href="construction.html">
+                    <h4 class="footer-text">Contact us</h4>
+                </a>
+                <a href="construction.html">
+                    <h4 class="footer-text">All products</h4>
+                </a>
+            </div>
+            <div class="footer-item" id="newsletter-container">
+                <h4 class="footer-heading">Sign up for our newsletter</h4>
+                <!--Newsletter sign up - partially copied from Mobile-First Lemorse project-->
+                <form>
+                    <div class="form-group">
+                        <label class="label" for="username">Username</label>
+                        <input class="input" type="text" name="username" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="password">Password</label>
+                        <input class="input" type="password" name="password" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <button id="register-button" type="submit">Register</button>
+                    </div>
+                </form>
+                <!--Newsletter sign up-->
+            </div>
+            <div class="footer-item" id="social-media-container">
+                <div id="newsletter-heading">
+                    <h4 class="footer-heading">Find us on social media</h4>
+
+                </div>
+                <div id="icons-container">
+                    <a class="icon" href="https://www.instagram.com/deadra_eadra/"><i class="fab fa-instagram-square"></i></a>
+                    <a class="icon" href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter-square"></i></a>
+                    <a class="icon" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer-bottom">
+            <h4 id="copyright-text">© Pickwick 2021 All rights reserved</h4>
+        </div>
+    </footer>
+</body>
+
+</html>
